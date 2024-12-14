@@ -1,0 +1,158 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+/* Header Styles */
+header {
+  background-color: rgb(83, 79, 79);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #ff6347;
+}
+
+/* Main Container */
+.container1 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Input Section */
+.input-container, .display-text {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  position: relative;
+}
+
+/* Input Fields */
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Delete Button */
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: red;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: darkred;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Styling for success notification */
+.success-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  opacity: 0.9;
+  transition: opacity 0.5s ease;
+}
+
+/* Fade out effect */
+.success-notification:hover {
+  opacity: 1;
+}
